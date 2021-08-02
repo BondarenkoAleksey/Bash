@@ -1,0 +1,52 @@
+﻿1) Посмотреть где я - pwd
+
+2) Создать папку - mkdir foldername
+
+3) Зайти в папку - cd foldername
+cd ./foldername
+
+4) Создать 3 папки - mkdir foldername1 foldername2 foldername3
+
+5) Зайти в любую папку - cd fullfilepath/foldername
+
+6) Создать 5 файлов (3 txt, 2 json) - touch 1.txt 2.txt 3.txt 1.json 2.json
+
+7) Создать 3 папки - mkdir foldername4 foldername5 foldername6
+
+8) Вывести список содержимого папки - ls,
+всего содержимого - ls -la,
+всего содержимого компактно - ls -F
+
+9) + Открыть любой txt файл - vim fullfilepath/1.txt
+
+10) + написать туда что-нибудь, любой текст. - i (переход в режим написания текста) text
+
+
+11) + сохранить и выйти. - Esc (переход в режим команд) :wq Enter
+
+12) Выйти из папки на уровень выше - cd ..
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. -
+mv fullfilepath/3.txt otherfullfilepath | mv fullfilepath/4.txt otherfullfilepath
+mv fullfilepath/{1.txt,2.txt} otherfullfilepath
+mv fullfilepath/*.json otherfullfilepath
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. -
+cp fullfilepath/5.txt otherfullfilepath/6.txt onemorefullfilepath
+
+15) Найти файл по имени - find -type f -iname 135.txt 2>/dev/null
+
+16) просмотреть содержимое в реальном времени - tail -f filepath/
+
+17) вывести несколько первых строк из текстового файла - 2 строки (2 способа)
+head -n2 filepath/1.txt
+cat filepath/1.txt | grep -A1 "qwerty" filepath/1.txt , где qwerty - поисковое слово, слово в первой строке файла.
+
+18) вывести несколько последних строк из текстового файла - 2 строки (2 способа)
+tail -n2 filepath/1.txt
+cat filepath/1.txt | grep -С1 "qwerty" filepath/1.txt , где qwerty - поисковое слово, слово в последней строке файла.
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. - 
+less -s filepath/1.txt
+
+20) вывести дату и время - date

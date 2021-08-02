@@ -1,0 +1,15 @@
+﻿#!/bin/bash
+# Зайти в папку
+cd /c/users/
+# Создать 3 папки
+mkdir /c/users/{folder1,folder2,folder3}
+# Зайти в любую папку
+cd /c/users/folder1
+# Создать 5 файлов (3 - .txt, 2 - .json)
+touch /c/users/folder1/{1.txt,2.txt,3.txt,1.json,2.json}
+# Создать 3 папки
+mkdir /c/users/folder1/{folder4,folder5,folder6}
+# Вывести список содержимого папки
+ls -la
+# Перенести любые 2 созданных файла в любую другую папку
+mv /c/users/folder1/{1.json,2.json} /c/users/folder2
